@@ -1,7 +1,6 @@
 from .colors import colored_text
-from rich.console import Console
-from rich.text import Text
-
+from rich.logging import *
+console = Console()
 def print_log_IWE(text: str, status: str):
     """
 
@@ -9,10 +8,10 @@ def print_log_IWE(text: str, status: str):
     """
     if status == "info":
         print(colored_text("[INFO]","green"), end = "")
-        print(text)
+        console.log(text)
     if status == "warn":
         print(colored_text("[WARN]", "orange"), end="")
-        print(text)
+        console.log(text)
     if status == "error":
         print(colored_text("[ERROR]","red"), end = "")
-        print(text)
+        console.log(text)

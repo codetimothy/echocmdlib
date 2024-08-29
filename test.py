@@ -11,6 +11,7 @@ def main():
     while True:
         clear_screen()
         print_title("THIS IS A TEST")
+        print_title("V0.1.7")
         menu_options = ["执行事例日志", "调出输入框", "执行进度条", "调出等待", "退出"]
         print_menu(menu_options)
 
